@@ -35,7 +35,7 @@ public class MenuManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        InvokeRepeating("UpdateTextCo", 0, 0.1f);
+        //InvokeRepeating("UpdateTextCo", 0, 0.1f);
     }
 
     public void ShowStartButton()

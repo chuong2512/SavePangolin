@@ -8,6 +8,7 @@ public class CarController : MonoBehaviour,IListener
 {
 	public ParkingColor                         parkingColor;
 	public LineRenderer                         lineRenderer;
+	public LineRenderer                         lineRendererRoad;
 	public List<Vector3>                        listOfPoints;
 	public float                                distance2points=0.05f;
 	bool                                        isDrawningLine =false;
@@ -99,6 +100,7 @@ public class CarController : MonoBehaviour,IListener
 					var hitTarget=Physics2D.CircleCast(Camera.main.ScreenToWorldPoint(Input.mousePosition),0.1f,Vector2.zero);
 					if(hitTarget.collider!=null && hitTarget.collider.gameObject.CompareTag("Target"))
 					{
+						UpdateRoad(listOfPoints);
 						StartCoroutine(Action());
 						//isMoving = true;
 						isReadyToGo=true;
@@ -176,6 +178,12 @@ public class CarController : MonoBehaviour,IListener
 	{
 		lineRenderer.positionCount=list.Count;
 		lineRenderer.SetPositions(list.ToArray());
+	}
+	
+	void UpdateRoad(List<Vector3> list)
+	{
+		lineRendererRoad.positionCount=list.Count;
+		lineRendererRoad.SetPositions(list.ToArray());
 	}
 
 	ParkingTarget parkingTarget;
