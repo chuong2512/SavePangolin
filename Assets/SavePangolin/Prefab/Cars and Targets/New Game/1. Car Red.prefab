@@ -230,7 +230,7 @@ MonoBehaviour:
   isParkedCarCorrectly: 0
   renderTrans: {fileID: 7356099197823768476}
   destroyFx: {fileID: 105310, guid: e6ea0c2b13012484ba2f5dc1054e6d75, type: 3}
-  soundDestroy: {fileID: 8300000, guid: 8d166a8c1448c1842887c7c4eec75207, type: 3}
+  soundDestroy: {fileID: 8300000, guid: 28be71c01e548b64d88dd907df26194c, type: 3}
 --- !u!120 &4003718590330227780
 LineRenderer:
   serializedVersion: 2
