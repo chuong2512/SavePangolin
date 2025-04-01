@@ -8,7 +8,7 @@ public class PurchasingManager : MonoBehaviour
     {
         switch (i)
         {
-            case 1:
+            /*case 1:
                 IAPManager.OnPurchaseSuccess = () => { GameDataManager.Instance.playerData.AddDiamond(5); };
                 IAPManager.Instance.BuyProductID(IAPKey.PACK1);
                 break;
@@ -27,7 +27,7 @@ public class PurchasingManager : MonoBehaviour
             case 5:
                 IAPManager.OnPurchaseSuccess = () => { GameDataManager.Instance.playerData.AddDiamond(100); };
                 IAPManager.Instance.BuyProductID(IAPKey.PACK5);
-                break;
+                break;*/
         }
     }
 
